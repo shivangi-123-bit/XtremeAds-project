@@ -1,33 +1,3 @@
-// const scroll = new LocomotiveScroll({
-//   el: document.querySelector("#main"),
-//   smooth: true,
-// });
-
-// console.log(strategy)
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   const scroll = new LocomotiveScroll({
-//     el: document.querySelector("#main"),
-//     smooth: true,
-//   });
-
-//   let strategy = "yourAccordionElementId"; // Define the ID here
-//   toggleAccordion(strategy);
-// });
-
-// function toggleAccordion(id) {
-//   let content = document.getElementById(id);
-
-//   if (content.style.display === "block") {
-//     content.style.display = "none";
-//     // content.style.border = "none";
-//   } else {
-//     content.style.display = "block";
-//     content.style.border = "none";
-//   }
-// }
-// toggleAccordion(strategy);
-
 document.addEventListener("DOMContentLoaded", function () {
   const scroll = new LocomotiveScroll({
     el: document.querySelector("#main"),
