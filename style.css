@@ -1,15 +1,13 @@
 * {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: border-box;
     padding: 0;
 }
 
 body {
-    font-family: monospace;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     overflow-x: hidden;
 }
 
@@ -20,7 +18,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     color: black;
-    padding: 0 14vw;
+    padding: 0 13vw;
 }
 
 .logo img {
@@ -119,7 +117,7 @@ nav .right-nav-cont ul .dropdown .dropdown-content2 {
 .extra {
     width: 100%;
     height: 100vh;
-   
+
 }
 
 .menu-icon {
@@ -527,6 +525,7 @@ section .hero {
 .case-study {
     padding: 100px 13vw;
     background-color: #f9f9f9;
+    /* background-color: red; */
 }
 
 .case-study h2 {
@@ -676,14 +675,12 @@ section .hero {
     color: #5b5b5b;
     font-weight: 100;
     margin-bottom: 20px;
-    font-family: monospace;
 }
 
 .pricing-plans p {
     font-size: 15px;
     color: #5b5b5b;
     opacity: 0.7;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .quote-button {
@@ -712,127 +709,170 @@ section .hero {
 /* --------------------Social Media Styling-------------------------- */
 
 section.social-media-marketing {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+    padding: 40px 13vw;
+    height: fit-content;
 }
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-    color: #333;
+.ln {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
 }
 
-/* Platform Block Styling */
+.horizntl-gray-ln {
+    width: 15vw;
+    height: 2px;
+    background-color: #ddd;
+    margin: 0 15px;
+}
+
+.ln h2 {
+    font-size: 20px;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
 .platforms {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
 }
 
-.platform {
+.social-media-marketing .platform {
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+    margin-top: 50px;
 }
 
 .platform img {
     max-width: 40px;
     margin-bottom: 10px;
+    padding: 0 10px;
 }
 
-h3 {
-    font-size: 18px;
+.social-media-marketing .platforms h3 {
+    font-size: 23px;
+    font-weight: 100;
     margin-bottom: 15px;
-    color: #007bff;
+    color: #3366FF;
+    padding: 0 10px;
+    text-transform: uppercase;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.platforms .platform .fcbk {
+    color: #3366FF;
 }
 
-ul li {
-    margin-bottom: 8px;
+.platforms .platform .insta {
+    color: #800080;
+}
+
+.linkdin {
+    color: #00AAE7;
+}
+
+.twitter {
+    color: #00FFFF;
+}
+
+.social-media-marketing .platforms ul {
+    padding-bottom: 20px;
+    text-align: left;
+    width: fit-content;
+    padding: 10px 45px;
+}
+
+.social-media-marketing .platforms ul li {
+    margin-bottom: 15px;
     color: #666;
-    font-size: 14px;
+    font-size: 16px;
+}
+
+.platforms .bodr_pltfrm {
+    border-right: 1px solid #dddddd9f;
 }
 
 .chat-btn {
+    width: 90%;
+    margin-right: 50px;
+    padding: 10px 15px;
+    text-align: center;
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    color: #666666;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #ddd;
 }
 
-/* Hover effects */
 .chat-btn:hover {
-    background-color: #0056b3;
+    background-color: #77777785;
 }
 
 /* --------------why choose us section---------- */
 
 section.why-choose-us {
     background-color: #222;
-    color: #fff;
-    padding: 40px 20px;
+    color: #ffffff;
+    padding: 40px 13vw;
     text-align: center;
 }
 
 .why-choose-us h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #f2f2f2;
-    margin-bottom: 30px;
+    font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
-.reasons {
+.why-choose-us .ln .horizntl-gray-ln{
+    background-color: #4e4e4e;
+    height: 2px;
+    width: 13vw;
+}
+
+.why-choose-us .reasons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
+
 }
 
-.reason-column {
-    flex: 1;
+.why-choose-us .reasons .reason-column {
+    /* flex: 1; */
     display: flex;
     justify-content: center;
 }
 
-.reason-column ul {
+.why-choose-us .reasons .reason-column ul {
     list-style: none;
+    margin: 17px 0;
     padding: 0;
+    /* text-align: center; */
 }
 
-.reason-column li {
+.why-choose-us .reasons .reason-column li {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 17px;
+    opacity: 0.8;
+    text-transform: uppercase;
 }
 
-.reason-column li img {
-    width: 20px;
+.why-choose-us .reasons .reason-column li img {
+    width: 30px;
     margin-right: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .reasons {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 /* -----------worked with----------- */
 
-.clients-section {
+/* .clients-section {
     text-align: center;
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -856,10 +896,10 @@ section.why-choose-us {
 
 .logo-slider img:hover {
     filter: grayscale(0%);
-}
+} */
 
 /* How We Work Section */
-.how-we-work p {
+/* .how-we-work p {
     color: #333;
     font-size: 18px;
     margin-bottom: 20px;
@@ -873,10 +913,10 @@ section.why-choose-us {
 
 .how-we-work a:hover {
     text-decoration: underline;
-}
+} */
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .logo-slider img {
         max-width: 100px;
     }
@@ -894,11 +934,11 @@ section.why-choose-us {
     .how-we-work p {
         font-size: 14px;
     }
-}
+} */
 
 
 /* ------------footer------------ */
-footer {
+/* footer {
     background-color: #000;
     color: #fff;
     padding: 30px 0;
@@ -954,7 +994,7 @@ footer {
 
 .footer-bottom .social-links a:hover {
     text-decoration: underline;
-}
+} */
 
 
 
@@ -986,6 +1026,17 @@ footer {
     .platforms {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* for social media section*/
+    .reasons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .platforms .insta_bodr {
+        border-right: none;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -996,7 +1047,6 @@ footer {
     .hero-content {
         padding: 0 5rem;
     }
-
 
     .left {
         width: 55%;
@@ -1050,7 +1100,6 @@ footer {
 
     section .hero {
         height: 600px;
-        /* background-color: #7A9C59; */
     }
 
     .dim-light {
@@ -1060,7 +1109,6 @@ footer {
     .hero-content {
         padding: 0;
     }
-
 
     .hero-container {
         display: flex;
@@ -1150,24 +1198,40 @@ footer {
     }
 
     .container3 {
-
         padding: 0 5vw;
         flex-wrap: wrap;
     }
 
     /* ----------social media--------- */
-    .platforms {
-        grid-template-columns: 1fr;
+
+    .social-media-marketing .platforms ul {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 100px;
+        padding-bottom: 20px;
+        padding-right: 0;
+        width: fit-content;
+    }
+
+    section.social-media-marketing {
+        text-align: center;
+    }
+
+    section.social-media-marketing {
+        padding: 40px 5vw;
+        height: fit-content;
     }
 
 }
 
-
 @media (max-width: 576px) {
+    .logo img {
+        width: 15rem;
+    }
+
     .left {
         width: 90%;
     }
-
 
     .right-of-accordion img {
         width: 120%;
@@ -1193,4 +1257,33 @@ footer {
         margin-bottom: 50px;
     }
 
+    /* ------social media------- */
+    .social-media-marketing .ln h2 {
+        margin: 10px 0;
+    }
+
+    .social-media-marketing .ln {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .social-media-marketing .ln .horizntl-gray-ln {
+        width: 100%;
+    }
+
+    .platforms {
+        grid-template-columns: 1fr;
+    }
+
+    .platforms .bodr_pltfrm {
+        border-right: none;
+    }
+
+}
+
+@media (max-width:410px) {
+    .social-media-marketing .platform {
+        width: 69vw;
+    }
 }
