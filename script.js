@@ -33,3 +33,11 @@ function reverseArrow(id) {
     });
   }
 }
+
+
+// var ques1 = document.querySelector(".ques1")
+// var ans = document.querySelector(".ques1-text")
+
+// ques1.addEventListener("click",function(){
+//   ans.style.opacity = 1
+//  })
