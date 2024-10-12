@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     smooth: true,
   });
 
-  var id = document.querySelector("#strategy");
-  toggleAccordion(id);
+   var id = document.querySelector("#strategy");
+   toggleAccordion(id);
 });
 
 function toggleAccordion(id) {
@@ -35,9 +35,15 @@ function reverseArrow(id) {
 }
 
 
-// var ques1 = document.querySelector(".ques1")
-// var ans = document.querySelector(".ques1-text")
+var ques1 = document.querySelector(".ques1")
+var ans1 = document.querySelector(".ans1")
+var iQues1 = document.querySelector("#i-ques1")
 
-// ques1.addEventListener("click",function(){
-//   ans.style.opacity = 1
-//  })
+
+ques1.addEventListener("click",function(){
+   iQues1.style.rotate = "180deg"
+})
+
+ques1.addEventListener("click",function(){
+  ans1.style.opacity = 1
+})
