@@ -875,6 +875,11 @@ section.why-choose-us {
     padding: 10px 13vw;
 }
 
+.doubt-quest{
+    text-align: center;
+    padding: 10px 13vw;
+}
+
 .ques {
     text-align: left;
     padding-bottom: 50px;
@@ -898,24 +903,38 @@ section.why-choose-us {
 
 .ques i {
     margin-right: 10px;
-    background-color: rosybrown;
+    color: #595959bd;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .ques-ans h4 {
-    font-size: 1.2vw;
+    font-size: 20px;
     font-weight: 300;
     padding: 15px 0;
     border-top: 1px solid #c2c2c2;
+    display: flex;
+    align-items: center;
+    color:#636363;
 }
-
+.ques-ans h4:hover{
+    color: #000;
+}
 .ques-ans p {
     font-weight: 300;
     display: none;
     padding: 20px 15px;
+    transition-duration: 2s;
+    transition: all ease 4s;
 }
-
-.clients-section .ques .buttons {
-    width: 30%;
+.rotate{
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
+.doubt-quest .ques .buttons {
+    width: 20vw;
 }
 
 /* -------------moving-logo of who we work with---------- */
@@ -1064,9 +1083,10 @@ footer .footer-bottom {
     background-color: #5B5B5B;
     padding: 20px 13vw;
     display: flex;
-    flex-direction: row-reverse;
-    min-height: 70px;
+    align-items: center;
     justify-content: space-between;
+    flex-direction: row-reverse;
+    min-height: 50px;
 }
 
 footer .footer-bottom .social-links .flex-cont {
@@ -1115,7 +1135,10 @@ footer .footer-bottom .copy-llp span {
 
     }
 
-
+    .clients-section .ques .buttons {
+        width: 32vw;
+        flex-direction: row;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1175,6 +1198,11 @@ footer .footer-bottom .copy-llp span {
     .plan2 {
         width: 90%;
         margin: 20px 0;
+    }
+
+    .clients-section .ques .buttons {
+        width: 42vw;
+        flex-direction: row;
     }
 }
 
@@ -1239,6 +1267,10 @@ footer .footer-bottom .copy-llp span {
     .left {
         width: 67%;
         min-height: 430px;
+    }
+    .clients-section .ques .buttons {
+        width: 52vw;
+        flex-direction: row;
     }
 
 
@@ -1359,39 +1391,43 @@ footer .footer-bottom .copy-llp span {
 
 }
 
-@media (max-width:660px){
+@media (max-width:660px) {
     footer .footer-bottom {
         padding: 20px 3vw;
         /* display: inline-block; */
         /* width: 100%; */
     }
-    
+
     /* footer .footer-bottom .social-links .flex-cont {
         display: flex;
         flex-shrink: 0;
     } */
-/*     
+    /*     
     footer .footer-bottom .social-links {
         display: flex;
         color: #ffffff80;
         text-decoration: none;
     } */
-    
+
     footer .footer-bottom .copy-llp a,
     footer .footer-bottom .social-links a {
         padding: 0 3px;
         display: inline-block;
 
     }
-    
+
     footer .footer-bottom .copy-llp {
         display: inline-block;
 
     }
-    
+
     footer .footer-bottom .copy-llp span {
         display: inline-block;
         /* flex-shrink: 0; */
+    }
+    .clients-section .ques .buttons {
+        width: 70vw;
+        flex-direction: row;
     }
 }
 
@@ -1468,7 +1504,11 @@ footer .footer-bottom .copy-llp span {
         margin-left: 5%;
     }
 
-   
+    .ques-ans h4 {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
 
 }
 
@@ -1482,9 +1522,19 @@ footer .footer-bottom .copy-llp span {
     .how-we-work p {
         font-size: 14px;
     }
+
     footer .footer-bottom .social-links {
         display: block;
         align-content: center;
+    }
+    .clients-section .ques .buttons {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .clients-section .ques .buttons a{
+        display: flex;
+        justify-content: center;
     }
 
 }

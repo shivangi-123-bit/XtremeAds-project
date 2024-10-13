@@ -3,47 +3,27 @@ document.addEventListener("DOMContentLoaded", function () {
     el: document.querySelector("#main"),
     smooth: true,
   });
-
-   var id = document.querySelector("#strategy");
-   toggleAccordion(id);
 });
 
-function toggleAccordion(id) {
-  let content = document.getElementById(id);
 
-  if (content) {
-    // Ensure content exists
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-      reverseArrow(id);
-    }
-  }
-}
 
-function reverseArrow(id) {
-  let arrow = document.querySelectorAll(
-    ".accordion-item button.accordion-header i"
-  );
-  console.log(arrow);
-  for (i = 0; i < arrow.length; i++) {
-    id.addEventListener("click", () => {
-      arrow[i].style.transform = "rotate(180deg)";
+let Quests = document.querySelectorAll(".doubt-quest .ques .ques-ans h4");
+let answers = document.querySelectorAll(".doubt-quest .ques .ques-ans p");
+
+Quests.forEach((question, index) => {
+  let arrow = question.querySelector("i");
+
+  question.addEventListener("click", () => {
+    const isAnswerVisible = answers[index].style.display === "block";
+
+    answers.forEach((answer, idx) => {
+      answer.style.display = "none";
+      Quests[idx].querySelector("i").classList.remove("rotate");
     });
-  }
-}
 
-
-var ques1 = document.querySelector(".ques1")
-var ans1 = document.querySelector(".ans1")
-var iQues1 = document.querySelector("#i-ques1")
-
-
-ques1.addEventListener("click",function(){
-   iQues1.style.rotate = "180deg"
-})
-
-ques1.addEventListener("click",function(){
-  ans1.style.opacity = 1
-})
+    if (!isAnswerVisible) {
+      answers[index].style.display = "block";
+      arrow.classList.add("rotate");
+    }
+  });
+});
