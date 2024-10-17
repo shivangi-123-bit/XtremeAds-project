@@ -412,7 +412,7 @@ section .hero {
     text-decoration: none;
     color: white;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -433,11 +433,11 @@ section .hero {
 }
 
 .pricing-section .container2 .pricing-plans .plan .buttons a button {
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* -------------------Styling for SMO Plans Section-------------------- */
@@ -557,6 +557,8 @@ section .hero {
 }
 
 .accordion-item button {
+    display: flex;
+    align-items: center;
     color: #777777;
     font-size: 16px;
     background-color: #f9f9f9;
@@ -581,6 +583,7 @@ section .hero {
     display: none;
     padding: 15px;
     border-top: none;
+    transition: all ease 1s;
 }
 
 .accordion-content ul {
@@ -1321,6 +1324,7 @@ footer .footer-bottom .copy-llp span {
         width: 52vw;
         flex-direction: row;
     }
+
     /* ------------------------------------- */
 
     /*---------- Responsive design for feature section -------------*/
@@ -1543,6 +1547,7 @@ footer .footer-bottom .copy-llp span {
         display: flex;
         align-items: center;
     }
+
     .doubt-quest .ques .buttons {
         width: 80vw;
     }
