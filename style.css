@@ -7,6 +7,10 @@
 
 body {
     overflow-x: hidden;
+    background-color: #5B5B5B;
+}
+#main{
+    background-color: white;
 }
 
 /* ------------- Nav bar ------------------ */
@@ -70,7 +74,7 @@ nav .right-nav-cont ul .dropdown .dropdown-content2 {
 nav .right-nav-cont ul .dropdown .dropdown-content1,
 nav .right-nav-cont ul .dropdown .dropdown-content2 {
     background-color: #ffffff;
-    z-index: 3;
+    z-index: 33;
     top: 80%;
     align-items: center;
     justify-content: center;
@@ -111,7 +115,7 @@ nav .right-nav-cont ul .dropdown .dropdown-content2 {
     width: 260px;
     height: 120px;
     background-color: #ffffff;
-    z-index: 3;
+    z-index: 33;
 }
 
 .menu-icon {
@@ -228,6 +232,7 @@ section .hero {
 }
 
 /* ------------hero section right -------------- */
+
 .right {
     position: absolute;
     right: 12%;
@@ -236,7 +241,6 @@ section .hero {
     height: 55vh;
     background-color: transparent;
 }
-
 
 /* -------------feature section ------------------ */
 
@@ -338,7 +342,7 @@ section .hero {
 
 /* ------------------ pricing section --------------------- */
 .container2 {
-    padding: 0 9vw;
+    padding: 0 10vw;
 }
 
 .pricing-section {
@@ -355,7 +359,6 @@ section .hero {
 
 .pricing-section p {
     font-size: 16px;
-    margin-bottom: 40px;
     color: #bbb;
 }
 
@@ -369,8 +372,7 @@ section .hero {
 .plan {
     background-color: #5b5a5a;
     padding: 10px;
-    width: 20%;
-    margin: 10px 0;
+    width: 22%;
 }
 
 .plan h3 {
@@ -388,7 +390,7 @@ section .hero {
 }
 
 .plan ul {
-    padding: 0 5vw;
+    padding: 0 20px;
     text-align: left;
     color: #bbb;
 }
@@ -434,10 +436,10 @@ section .hero {
 
 .pricing-section .container2 .pricing-plans .plan .buttons a button {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     border: none;
     border-radius: 5px;
-    padding: 5px;
+    padding: 6px;
 }
 
 /* -------------------Styling for SMO Plans Section-------------------- */
@@ -584,6 +586,7 @@ section .hero {
     padding: 15px;
     border-top: none;
     transition: all ease 1s;
+    transition-duration: 5s;
 }
 
 .accordion-content ul {
@@ -609,7 +612,6 @@ section .hero {
     font-size: 18px;
     color: #747373;
     text-transform: uppercase;
-
 }
 
 .accordion-item .accordion-content p {
@@ -645,12 +647,13 @@ section .hero {
 .right-of-accordion img {
     width: 95%;
     margin-bottom: 50px;
+    transition: all ease 0.8s;
 }
 
 .right-of-accordion img:hover {
     scale: 1.1;
     width: 95%;
-    transition-duration: 1s;
+    transform: scale(1.1);
 }
 
 .right-of-accordion p {
@@ -663,6 +666,7 @@ section .hero {
 }
 
 /* -----------meet your buisness need/ pricing-plans style------------------- */
+
 .pricing-plans {
     background-color: #e8e8e8;
     padding: 50px 20px;
@@ -909,6 +913,7 @@ section.why-choose-us {
     width: 20px;
     font-size: 20px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .ques-ans h4 {
@@ -919,6 +924,7 @@ section.why-choose-us {
     display: flex;
     align-items: center;
     color: #636363;
+    cursor: pointer;
 }
 
 .ques-ans h4:hover {
@@ -964,7 +970,8 @@ section.why-choose-us {
 
 .clients-section-imgs {
     height: 85px;
-    margin: 25px 0;
+    margin: 30px 0;
+    padding: 0  20px;
 }
 
 @keyframes mobe {
@@ -1086,6 +1093,7 @@ footer {
 }
 
 /* ------------footer bottom-------------- */
+
 footer .footer-bottom {
     background-color: #5B5B5B;
     padding: 20px 13vw;
@@ -1127,6 +1135,7 @@ footer .footer-bottom .copy-llp span {
 }
 
 /*----------------------------------- MEDIA QUERIES FOR RESPONSIVENESS-------------------------------- */
+
 @media (max-width:1229px) {
     .buttons {
         flex-direction: column;
@@ -1503,6 +1512,7 @@ footer .footer-bottom .copy-llp span {
     }
 
     /* ------social media------- */
+    
     .social-media-marketing .ln h2 {
         margin: 10px 0;
     }
