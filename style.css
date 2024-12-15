@@ -80,13 +80,7 @@ nav {
     padding-top: 20px;
 }
 
-.menu-content .dropdown .dropdown-content1 {
-    /* top: 50%; */
-    height: fit-content;
-}
-
-.menu-content .dropdown .dropdown-content2 {
-    /* top: 60%; */
+.menu-content .dropdown .dropdown-content1,.menu-content .dropdown .dropdown-content2 {
     height: fit-content;
 }
 
@@ -141,7 +135,7 @@ nav a {
 .dropdown .dropdown-content2 {
     background-color: #ffffff;
     z-index: 33;
-    top: 80%;
+    top: 60%;
     align-items: center;
     justify-content: center;
     display: none;
