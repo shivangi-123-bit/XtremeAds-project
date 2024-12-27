@@ -182,6 +182,106 @@ nav a {
     display: none;
 }
 
+#getFreeEstimate{
+    position: fixed;
+    z-index: 1000;
+    top: 0%;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.4s;
+}
+
+#form-container{
+    position: fixed;
+    top:0%;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.4s;
+}
+
+.quote-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background: #fff;
+    z-index: 100000;
+}
+
+.quote-form h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.quote-form p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quote-form p a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.quote-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-form input, 
+.quote-form select, 
+.quote-form textarea, 
+.quote-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.quote-form select {
+    height: 40px;
+}
+
+.quote-form button {
+    background-color: #4a341b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.quote-form .close-btn {
+    background: gray;
+    border-radius: 50%;
+    width: 40px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    float: inline-end
+}
+
+
 /* -----------------hero section --------------- */
 
 section .hero {

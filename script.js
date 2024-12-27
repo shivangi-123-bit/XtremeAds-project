@@ -1,3 +1,23 @@
+function getFreeEstimateForm() {
+  let crossBtn = document.querySelector("#Close_Btn");
+  let getFreeEstimate = document.querySelector("#getFreeEstimate");
+  let formContainer = document.querySelector("#form-container");
+  let EstimateBtn = document.querySelector("#EstimateBtn");
+  console.log(EstimateBtn);
+  crossBtn.addEventListener('click',function btnFun(){
+    getFreeEstimate.style.display = "none";
+    formContainer.style.display = "none";
+  });
+  EstimateBtn.addEventListener("click", () => {
+    getFreeEstimate.style.display = "flex";
+    formContainer.style.display = "flex";
+    console.log("btn cliked")
+
+  });
+}
+
+getFreeEstimateForm();
+
 function caseStudy() {
   let topics = document.querySelectorAll(
     ".case-study .flex-container .accordion .accordion-item button"
