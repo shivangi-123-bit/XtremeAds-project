@@ -40,7 +40,7 @@
                             </ul>
                         </li>
                         <li><a href="#CaseStudy">BLOG</a></li>
-                        <li><a href="#tel:+916263661306">CONTACT</a></li>
+                        <li><a href="tel:+916263661306">CONTACT</a></li>
                         <li>
                             <div class="search-icn">
                                 <i class="ri-search-line"></i>
@@ -71,8 +71,8 @@
                             <li><a href="#">Facebook Ads Pricing India</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="CaseStudy">BLOG</a></li>
+                    <li><a href="tel:+91626366130">CONTACT</a></li>
                     <li>
                         <div class="search-icn">
                             <i class="ri-search-line"></i>
@@ -87,22 +87,22 @@
                     <button id="Close_Btn" class="close-btn">X</button>
                     <h2>Get A Free Quote</h2>
                     <p>OR, <a href="https://wa.me/+916263661306" target="_blank">CHAT ON WHATSAPP</a></p>
-                    <form>
+                    <form id="form" name="submit-to-google-sheet">
                         <input type="text" name="name" placeholder="Name" required>
                         <input type="text" name="mobile" placeholder="Mobile (with country code)" required>
                         <input type="email" name="email" placeholder="Email" required>
                         <select name="services" required>
                             <option value="" disabled selected>Select Service</option>
-                            <option value="service1">Google Ads</option>
-                            <option value="service2">Facebook Ads</option>
-                            <option value="service3">SEO</option>
-                            <option value="service4">Website</option>
-                            <option value="service5">Social Media Management</option>
-                            <option value="service6">Agency Account</option>
-                            <option value="service7">Others</option>
+                            <option value="Google Ads">Google Ads</option>
+                            <option value="Facebook Ads">Facebook Ads</option>
+                            <option value="SEO">SEO</option>
+                            <option value="Website">Website</option>
+                            <option value="Social Media Management">Social Media Management</option>
+                            <option value="Agency Account">Agency Account</option>
+                            <option value="Others">Others</option>
                         </select>
                         <textarea name="requirements" placeholder="Requirements." rows="3" required></textarea>
-                        <button type="submit">SUBMIT</button>
+                        <button id="Close_Submit_Btn" type="submit">SUBMIT</button>
                     </form>
                 </div>
             </div>
@@ -189,9 +189,12 @@
                     </div>
                 </div>
                 <div class="video">
-                    <iframe src="https://www.youtube.com/embed/8yJQ_pYEh_A?si=NO5uwNlwxpXETU9C" frameborder="0"
+                    <iframe frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen><video controls poster="./assets/video-front-page.jpg" width="640" height="360">
+                            <source src="https://www.youtube.com/embed/8yJQ_pYEh_A?si=NO5uwNlwxpXETU9C" type="video">
+
+                        </video></iframe>
                 </div>
             </div>
         </section>
@@ -541,7 +544,7 @@
                         </div>
                     </div>
 
-                    <button class="learn-more">Learn More...</button>
+                    <!-- <button class="learn-more">Learn More...</button> -->
                 </div>
                 <div class="right-of-accordion">
                     <img src="https://xtremeads.in/wp-content/uploads/2024/05/FB-Ads-result-SMM-1024x516.png"
@@ -568,7 +571,7 @@
                         delivering
                         the best possible results for our clients.</p>
                 </div>
-                <a href="#EstimateBtn" class="quote-button">Request a Free Quote</a>
+                <a id="#Estimatebtn" href="" class="quote-button">Request a Free Quote</a>
             </div>
         </section>
 
@@ -584,9 +587,10 @@
                 <!-- Facebook Block -->
                 <div class="platform bodr_pltfrm">
                     <a href="https://m.facebook.com/from_ig/xav_switcher_client/?ig_cuid=AYjTwac1HDkXVlwXmTnuiViS-r6vbHrmrsdPlmC1UdSgYMLX3vOSP2M69kV6sUHI9UVzNAZQZPKrdsl59ddmANJKU7pCpCZSE5bJ-aPXr5ynnw&fb_obid=FXACINFRAOBIDAdNYeHItCg5OjUh4hP1CwuDbh_JK31gU8Tdgy9Hlk6stDHiyHHhm0qg5CaEAlXkY-l4ZQEh4Wsk&nonce=uk6SGvS0Wz6FrBgTfpNPrjWDdgKTLZ9U&status_id=gD9iqlHYkd6AAAAAZwGHoN0rVCvKDqgP"
-                        target="_blank" rel="noopener noreferrer"></a><img
-                        src="https://xtremeads.in/wp-content/uploads/2024/05/facebook-icon.svg" alt="Facebook">
-                    <h3><span class="fcbk">Facebook</span></h3>
+                        target="_blank" rel="noopener noreferrer"><img
+                            src="https://xtremeads.in/wp-content/uploads/2024/05/facebook-icon.svg" alt="Facebook">
+                        <h3><span class="fcbk">Facebook</span></h3>
+                    </a>
                     <ul>
                         <li>Profile optimization</li>
                         <li>Content creation</li>
@@ -602,9 +606,10 @@
                 <!-- Instagram Block -->
                 <div class="platform bodr_pltfrm insta_bodr">
                     <a href="https://www.instagram.com/abhishekmishra2938?igsh=MTVlMWdyNXNzNWhrbw==" target="_blank"
-                        rel="noopener noreferrer"></a><img
-                        src="https://xtremeads.in/wp-content/uploads/2024/05/instagram-icon.svg" alt="Instagram">
-                    <h3><span class="insta">Instagram</span></h3>
+                        rel="noopener noreferrer"><img
+                            src="https://xtremeads.in/wp-content/uploads/2024/05/instagram-icon.svg" alt="Instagram">
+                        <h3><span class="insta">Instagram</span></h3>
+                    </a>
                     <ul>
                         <li>Profile optimization</li>
                         <li>Targeted Instagram Followers</li>
@@ -619,8 +624,11 @@
 
                 <!-- LinkedIn Block -->
                 <div class="platform bodr_pltfrm">
-                    <a href="https://www.linkedin.com/in/abhishek-mishra-501bb8152?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"></a><img src="https://xtremeads.in/wp-content/uploads/2024/05/linkedin-icon.svg" alt="LinkedIn">
-                    <h3><span class="linkdin">LinkedIn</span></h3>
+                    <a href="https://www.linkedin.com/in/abhishek-mishra-501bb8152?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank" rel="noopener noreferrer"><img
+                            src="https://xtremeads.in/wp-content/uploads/2024/05/linkedin-icon.svg" alt="LinkedIn">
+                        <h3><span class="linkdin">LinkedIn</span></h3>
+                    </a>
                     <ul>
                         <li>Profile optimization</li>
                         <li>LinkedIn Post sharing</li>
@@ -634,8 +642,10 @@
 
                 <!-- Twitter Block -->
                 <div class="platform">
-                    <img src="https://xtremeads.in/wp-content/uploads/2024/05/twitter-icon.svg" alt="Twitter">
-                    <h3><span class="twitter">Twitter</span></h3>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img
+                            src="https://xtremeads.in/wp-content/uploads/2024/05/twitter-icon.svg" alt="Twitter">
+                        <h3><span class="twitter">Twitter</span></h3>
+                    </a>
                     <ul>
                         <li>Profile optimization</li>
                         <li>Tweets Posting</li>
@@ -734,8 +744,8 @@
                         Most businesses spend $50 to $500 per day on social media advertisements.</p>
                 </div>
                 <div class="buttons">
-                    <a href="tel:+911234567890" class="contact-btn">Contact Now</a>
-                    <a href="https://wa.me/your-whatsapp-number" class="whatsapp-btn">Chat on WhatsApp</a>
+                    <a href="tel:+916263661306" class="contact-btn">Contact Now</a>
+                    <a href="https://wa.me/+916263661306" class="whatsapp-btn">Chat on WhatsApp</a>
                 </div>
             </div>
             <div class="gray-border-bottom"></div>

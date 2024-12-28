@@ -4,15 +4,13 @@ function getFreeEstimateForm() {
   let formContainer = document.querySelector("#form-container");
   let EstimateBtn = document.querySelector("#EstimateBtn");
   console.log(EstimateBtn);
-  crossBtn.addEventListener('click',function btnFun(){
+  crossBtn.addEventListener("click", function btnFun() {
     getFreeEstimate.style.display = "none";
     formContainer.style.display = "none";
   });
   EstimateBtn.addEventListener("click", () => {
     getFreeEstimate.style.display = "flex";
     formContainer.style.display = "flex";
-    console.log("btn cliked")
-
   });
 }
 
@@ -166,3 +164,49 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   animation();
 });
+
+function contactForm() {
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbyVNxYz2mNXkcOCscKAbx9_wH7sC6SZmY77axPUpNYfINUKKVHHGv_4EmbAajdiN7CH/exec";
+  const form = document.forms["submit-to-google-sheet"];
+  
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); // Prevent default form submission
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        showPopup("Your details have been submitted successfully!");
+        form.reset(); // Reset the form fields
+      })
+      .catch((error) => {
+        console.error("Error!", error.message);
+        showPopup("There was an error submitting the form. Please try again.");
+      });
+  });
+  
+}
+
+// Function to show a popup message
+function showPopup(message) {
+  const popup = document.createElement("div");
+  popup.innerText = message;
+  popup.style.position = "fixed";
+  popup.style.top = "50%";
+  popup.style.left = "50%";
+  popup.style.transform = "translate(-50%, -50%)";
+  popup.style.backgroundColor = "#4caf50";
+  popup.style.color = "#fff";
+  popup.style.padding = "15px 20px";
+  popup.style.borderRadius = "8px";
+  popup.style.boxShadow = "0px 4px 8px rgba(0, 0, 0, 0.2)";
+  popup.style.zIndex = "10001";
+  document.body.appendChild(popup);
+
+  // Automatically remove popup after 3 seconds
+  setTimeout(() => {
+    popup.remove();
+  }, 2000);
+}
+
+// Initialize the contact form submission
+contactForm();
+
