@@ -95,10 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ".pricing-section .container2 .pricing-plans .plan"
     );
 
-    let smoPlans = document.querySelectorAll(
-      ".smo-plans .plans-container .plan2"
-    );
-
     plans.forEach((plan) => {
       gsap.from(plan, {
         opacity: 0,
@@ -111,22 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
           markers: false,
           start: "top 70%",
           end: "top 30%",
-        },
-      });
-    });
-
-    smoPlans.forEach((smoplan) => {
-      gsap.from(smoplan, {
-        opacity: 0,
-        transform: "rotate3D(0,500,0,180deg)",
-        x: -10,
-        duration: 2,
-        scrollTrigger: {
-          scrub: 5,
-          trigger: smoplan,
-          markers: false,
-          start: "top 80%",
-          end: "top 40%",
         },
       });
     });
