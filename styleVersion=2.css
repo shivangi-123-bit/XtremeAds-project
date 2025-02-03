@@ -472,6 +472,11 @@ section .hero {
     width: 40%;
 }
 
+.social-media-post-design .container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .content h2 {
     font-size: 24px;
     color: #555555;
@@ -494,16 +499,22 @@ section .hero {
     margin-bottom: 10px;
 }
 
-.video {
+.social-media-post-design .container .video {
     flex: 1 1 40%;
-    padding-left: 50px;
+    padding: 20px 50px;
+    transform: scale(1.02);
+    transition: transform 0.5s ease-in-out;
 }
 
-.video iframe {
-    width: 100%;
-    height: 100%;
+.social-media-post-design .container .video video {
+    width: 40vw;
+    border-radius: 20px;
+    background-color: #01011f;
 }
 
+.social-media-post-design .container .video:hover{
+    scale: 1.05;
+}
 /* ------------------ pricing section --------------------- */
 .container2 {
     padding: 0 10vw;
@@ -1468,9 +1479,8 @@ footer .footer-bottom .copy-llp span {
         width: 100%;
     }
 
-    .video iframe {
-        height: 50vh;
-        width: 100%;
+    .social-media-post-design .container .video video {
+        width: 80vw;
     }
 
     /* ------------------for pricing section --------------------- */
@@ -1607,6 +1617,11 @@ footer .footer-bottom .copy-llp span {
     .container3 .content-price-plan {
         width: 90%;
         margin-bottom: 50px;
+    }
+
+    .social-media-post-design .container .video video {
+        width: 70vw;
+        height: 40vh;
     }
 
     /* ------social media------- */
