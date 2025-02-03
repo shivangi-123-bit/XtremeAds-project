@@ -1,9 +1,8 @@
 function getFreeEstimateForm() {
-  let crossBtn = document.querySelector("#Close_Btn");
+  let crossBtn = document.querySelector("#form-container #Close_Btn");
   let getFreeEstimate = document.querySelector("#getFreeEstimate");
   let formContainer = document.querySelector("#form-container");
   let EstimateBtn = document.querySelector("#EstimateBtn");
-  console.log(EstimateBtn);
   crossBtn.addEventListener("click", function btnFun() {
     getFreeEstimate.style.display = "none";
     formContainer.style.display = "none";
@@ -121,11 +120,11 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 0.7,
     });
 
-    tl.from(".menu-content h4", {
+    tl.from(".menu-content li a", {
       x: 150,
       opacity: 0,
-      stagger: 0.2,
-      duration: 0.4,
+      stagger: 0.1,
+      duration: 0.1,
     });
 
     tl.from(menuCross, {
