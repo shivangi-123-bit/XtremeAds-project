@@ -57,7 +57,7 @@ nav {
 
 .menu-content {
     width: 30%;
-    height: 80vh;
+    min-height: 80vh;
     background-color: #ffffff9b;
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -73,10 +73,10 @@ nav {
 
 .menu-content li a,
 .menu-content li .dropdown {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     color: #000;
-    line-height: 4rem;
+    line-height: 3rem;
     padding-top: 20px;
 }
 

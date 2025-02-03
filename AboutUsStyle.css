@@ -20,6 +20,15 @@
     margin: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+#main .content .aboutUs-content:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.644);
+}
 
 #main .content .aboutUs-content h1{
     text-align: center;
