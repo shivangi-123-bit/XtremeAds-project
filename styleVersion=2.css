@@ -286,13 +286,12 @@ nav a {
     float: inline-end
 }
 
-
 /* -----------------hero section --------------- */
 
 section .hero {
     min-height: 550px;
     width: 100%;
-    background-image: url(https://xtremeads.in/wp-content/uploads/2023/08/Social-media-management-services-2.webp);
+    background-image: url(https://www.shutterstock.com/image-photo/digital-marketing-financial-business-data-600nw-2473588721.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -301,7 +300,7 @@ section .hero {
 .hero-content {
     width: 100%;
     min-height: 550px;
-    padding: 0 13vw;
+    padding: 0 10vw;
     display: flex;
     align-items: center;
 }
@@ -353,12 +352,13 @@ section .hero {
 }
 
 .left .box ul {
-    padding-left: 40px;
+    padding-left: 20px;
     margin: 12.24px 0;
 }
 
 .left .box ul li {
-    margin: 0px 0px 11px 18.72px;
+    margin: 0px 0px 7px 8px;
+    list-style: none;
 }
 
 .left .box .btn,
@@ -512,9 +512,10 @@ section .hero {
     background-color: #01011f;
 }
 
-.social-media-post-design .container .video:hover{
+.social-media-post-design .container .video:hover {
     scale: 1.05;
 }
+
 /* ------------------ pricing section --------------------- */
 .container2 {
     padding: 0 10vw;
@@ -1387,31 +1388,19 @@ footer .footer-bottom .copy-llp span {
         display: flex;
     }
 
-    .flex-container {
-        flex-direction: column;
+    .left .box {
+        padding-top: 0;
     }
 
-    .accordion {
-        width: 90%;
+    .left .box h1 {
+        font-weight: 300;
+        font-size: 22px;
+        margin: 10px 0;
+        color: #ffffff;
+        font-family: "Montserrat";
     }
 
-    .right-of-accordion {
-        width: 90%;
-    }
-
-    .doubt-quest .ques .buttons {
-        width: 60vw;
-    }
-
-    footer .footer-content {
-        padding: 30px 5vw;
-        flex-direction: column;
-    }
-
-    footer .footer-content .footer-section {
-        width: 100%;
-    }
-
+    
 }
 
 @media (max-width: 768px) {
@@ -1682,7 +1671,34 @@ footer .footer-bottom .copy-llp span {
 
 @media (max-width: 482px) {
     .hero-content {
-        padding: 0 10px;
+        padding: 0 5px;
+    }
+
+    .left .box {
+        padding-top: 0;
+    }
+
+    .left .box h1 {
+        font-weight: 300;
+        font-size: 20px;
+        margin: 5px 0;
+        color: #ffffff;
+        font-family: "Montserrat";
+    }
+
+    .left .box p {
+        font-weight: 200;
+        margin: 10px 0;
+    }
+
+    .left .box ul {
+        padding-left: 0px;
+        margin: 10px 0;
+    }
+
+    .left .box ul li {
+        margin: 0px 0px 7px 5px;
+        list-style: none;
     }
 
     .logo-slider img {
@@ -1714,5 +1730,37 @@ footer .footer-bottom .copy-llp span {
 @media (max-width:410px) {
     .social-media-marketing .platform {
         width: 69vw;
+    }
+}
+
+@media (max-width: 375px) {
+    .left .box {
+        width: 100%;
+        min-height: 100%;
+        padding-top: 0;
+    }
+
+    .left .box h1 {
+        font-weight: 300;
+        font-size: 20px;
+        margin: 12.24px 0;
+        color: #ffffff;
+        font-family: "Montserrat";
+    }
+
+    .left .box p {
+        font-weight: 200;
+        font-size: 13px;
+        margin: 0 0;
+    }
+
+    .left .box ul {
+        padding-left: 0px;
+        margin: 0 0;
+    }
+
+    .left .box ul li {
+        margin: 0px 0px 11px 18.72px;
+        font-size: 13px;
     }
 }
