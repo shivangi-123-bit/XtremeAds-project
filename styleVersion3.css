@@ -1091,9 +1091,10 @@ section.why-choose-us {
     width: 20%;
     position: absolute;
     background: white;
-    filter: blur(15px);
+    filter: blur(13px);
     left: 0;
     z-index: 1;
+    -webkit-filter: blur(13px);
 }
 
 .moving-div .blur-right {
@@ -1101,9 +1102,10 @@ section.why-choose-us {
     width: 20%;
     position: absolute;
     background: white;
-    filter: blur(15px);
+    filter: blur(13px);
     right: 0;
     z-index: 1;
+    -webkit-filter: blur(15px);
 }
 
 /* ---------------How We Work Section -------------------*/
@@ -1400,7 +1402,7 @@ footer .footer-bottom .copy-llp span {
         font-family: "Montserrat";
     }
 
-    
+
 }
 
 @media (max-width: 768px) {
@@ -1549,6 +1551,51 @@ footer .footer-bottom .copy-llp span {
 }
 
 @media (max-width:660px) {
+
+    .flex-container {
+        flex-direction: column;
+    }
+    .case-study {
+        padding: 50px 10vw;
+        background-color: #f9f9f9;
+    }
+    
+    .case-study h2 {
+        width: 70vw;
+    }
+
+    .accordion {
+        width: 100%;
+    }
+    
+    .flex-container .accordion .learn-more {
+        background-color: #5A4316;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+    
+    .flex-container .accordion .learn-more:hover {
+        background-color: #403010;
+    }
+    
+    .right-of-accordion {
+        width: 100%;
+        overflow: hidden;
+    }
+  
+    .right-of-accordion p {
+        font-size: 20px;
+        opacity: 0.6;
+        line-height: 1.5;
+        padding: 0 50px;
+        margin: 0 10px;
+        border-left: 2px solid black;
+    }
+
     footer .footer-bottom {
         padding: 20px 3vw;
     }
@@ -1646,13 +1693,24 @@ footer .footer-bottom .copy-llp span {
     /*---------------- responsiveness of logo slider--------- */
 
     .clients-section-imgs {
-        height: 8vw;
-        margin: 0 2vw;
+        height: 14vw;
+        margin: 2px 2vw;
     }
-
+    
     .moving-div {
         width: 80%;
         margin-left: 5%;
+    }
+
+    .moving-div .blur-right {
+        height: 100px;
+        width: 30%;
+        position: absolute;
+        background: white;
+        filter: blur(13px);
+        right: 0;
+        z-index: 1;
+        -webkit-filter: blur(15px);
     }
 
     .ques-ans h4 {
