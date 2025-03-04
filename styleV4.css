@@ -56,13 +56,13 @@ nav {
 /* ----------hidden menu content---------- */
 
 .menu-content {
-    width: 30%;
+    width: 60%;
     min-height: 80vh;
     background-color: #ffffff9b;
     backdrop-filter: blur(10px);
     border-radius: 10px;
     position: absolute;
-    right: -100%;
+    right: -120%;
     top: 5px;
     padding: 0rem 5rem;
     display: none;
@@ -76,22 +76,25 @@ nav {
     font-size: 15px;
     font-weight: 500;
     color: #000;
-    line-height: 3rem;
+    line-height: 3.5rem;
     padding-top: 20px;
 }
 
 .menu-content .dropdown .dropdown-content1,
 .menu-content .dropdown .dropdown-content2 {
     height: fit-content;
+    width: fit-content;
 }
 
 .menu-content li {
     list-style: none;
+    width: 130px;
+    margin-left: -30px;
 }
 
 .menu-cross {
-    height: 45px;
-    width: 45px;
+    height: 43px;
+    width: 43px;
     display: flex;
     justify-content: space-evenly;
     background-color: #3b3939b7;
@@ -100,7 +103,7 @@ nav {
 
 .menu-content h3 {
     position: absolute;
-    top: 5%;
+    top: 4%;
     right: 10%;
     color: white;
     font-size: 2rem;
@@ -1154,13 +1157,15 @@ footer {
 
 .footer-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 45px 13vw;
+    padding: 45px 10vw;
     background-color: #000;
 }
 
 .footer-section {
-    width: 21.4%;
+    width: fit-content;
+    margin-right: 20px;
 }
 
 .footer-section h3 {
@@ -1172,7 +1177,6 @@ footer {
 }
 
 .footer-section ul li {
-    margin-left: 30px;
     padding: 10px 0;
     border-bottom: 1px solid #33333369;
 }
@@ -1373,6 +1377,19 @@ footer .footer-bottom .copy-llp span {
     }
 }
 
+@media (max-width:600px){
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-section {
+        width: 100%;
+        padding-top: 30px;
+    }
+    
+}
+
 @media (max-width:850px) {
     body {
         overflow-x: hidden;
@@ -1555,11 +1572,12 @@ footer .footer-bottom .copy-llp span {
     .flex-container {
         flex-direction: column;
     }
+
     .case-study {
         padding: 50px 10vw;
         background-color: #f9f9f9;
     }
-    
+
     .case-study h2 {
         width: 70vw;
     }
@@ -1567,7 +1585,7 @@ footer .footer-bottom .copy-llp span {
     .accordion {
         width: 100%;
     }
-    
+
     .flex-container .accordion .learn-more {
         background-color: #5A4316;
         color: white;
@@ -1577,16 +1595,16 @@ footer .footer-bottom .copy-llp span {
         cursor: pointer;
         font-size: 17px;
     }
-    
+
     .flex-container .accordion .learn-more:hover {
         background-color: #403010;
     }
-    
+
     .right-of-accordion {
         width: 100%;
         overflow: hidden;
     }
-  
+
     .right-of-accordion p {
         font-size: 20px;
         opacity: 0.6;
@@ -1696,7 +1714,7 @@ footer .footer-bottom .copy-llp span {
         height: 14vw;
         margin: 2px 2vw;
     }
-    
+
     .moving-div {
         width: 80%;
         margin-left: 5%;

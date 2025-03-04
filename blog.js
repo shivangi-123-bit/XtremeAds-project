@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let menuCross = document.querySelector(".menu-content .cross .menu-cross");
   
       tl.to(".menu-content", {
-        right: 0,
+        right: 10,
         duration: 0.7,
       });
   

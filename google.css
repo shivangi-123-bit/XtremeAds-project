@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.g-hero-cont {
+    height: 50vh;
+    width: 100%;
+    background-color: #00000077;
+    padding: 0 5vw;
+}
+
+.g-hero {
+    background: url('../../assets/google-bg-img.avif') no-repeat center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    background-position: 'center';
+}
+
+.g-hero-cont .g-text {
+    color: white;
+    text-align: center;
+    margin: 5%;
+    padding: 20px 0;
+}
+
+.g-hero-cont .g-text .g-hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.g-hero-cont .g-text .g-hero-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+.g-section {
+    padding: 50px 0;
+    margin: 0 10vw;
+}
+
+.g-section-title {
+    font-size: 2rem;
+}
+
+.g-section-text {
+    font-size: 1.15rem;
+    margin-top: 25px;
+}
+
+.g-section-1 {
+    padding: 0 10vw;
+    background-color: #efefefed;
+}
+
+.g-services-grid,
+.g-pricing-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.g-section-title {
+    padding-top: 50px;
+}
+
+.g-service-card{
+    padding: 20px;
+    min-width: 15%;
+    max-width: 16%;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.g-pricing-card{
+    padding: 20px;
+    width: 170px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.g-service-card:hover {
+    transform: scale(1.05);
+}
+
+.g-pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.g-service-card h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.icon {
+    color: #1a83e5;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.budget-info{
+    font-size: 1.1rem;
+    margin-top: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #b4c8ed53;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.budget-info h3{
+    margin-bottom: 20px;
+}
+.budget-info ul li {
+    list-style: none;
+    padding: 4px 0;
+}
+
+.pro-tip{
+    background-color: #b4c8edc3;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.cta-content{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.cta-button{
+    color: white;
+    padding:15px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    font-size:1.1rem;
+    border: none;
+    transition:all ease 0.5s;
+    background-color: #ffb452;
+}
+
+.cta-button:hover{
+    transform: scale(1.05);
+    transition:all ease 0.5s;
+    background-color:#e9a44b ;
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+}
+
+.cta-button i{
+    margin-right: 10px;
+}
+
+.g-container-2{
+    padding: 50px 5px;
+}
+
+.g-container-2 h2{
+    font-size: 2rem;
+    padding-bottom:10px;
+}
+
+.cta-content p{
+    font-size: 1.2rem;
+}
+
+.g-section-2{
+    padding: 2vw 10vw;
+
+    background-color: #c4c4c492;
+}
+
+@media (max-width: 465px) {
+    .g-section-1 {
+        padding: 0 5vw;
+    }
+
+    .g-section {
+        padding: 0px 0;
+        margin: 0 5vw;
+    }
+
+    .g-service-card {
+        max-width: 75%;
+        min-width: 40%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .g-section-1,.g-section-2 {
+        padding: 0 5vw;
+    }
+
+    .g-section {
+        padding: 20px 0;
+        margin: 0 5vw;
+    }
+    .cta-content{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+}
+
+@media (max-width:600px) {
+    .g-hero-cont .g-text .g-hero-title {
+        font-size: 1.5rem;
+    }
+
+    .g-hero-cont .g-text .g-hero-subtitle {
+        font-size: 0.8rem;
+    }
+}
